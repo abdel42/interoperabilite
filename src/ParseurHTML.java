@@ -6,6 +6,8 @@ import org.jsoup.select.Elements;
 
 import javax.swing.*;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -38,13 +40,19 @@ public class ParseurHTML {
             String test2 = Jsoup.parse(test).text();
             System.out.println("\n\n"+test2);
             String[] infoBrut = test2.split(" - ");
-            for(int i = 0; i<infoBrut.length; i++){
-                System.out.println(infoBrut[i]);
+            Pattern pattern;
+            Matcher matcher = null;
+            ArrayList<String> result = new ArrayList<String>();
+            String[] te = infoBrut[2].split(":");
+            for (int h=0;h<te.length;h++){
+                System.out.println(te[h].toString());
             }
+
             /**
              * Nous avons ici les infos nécessaire en brut
              * il faut remplir les objetInfo apres avoir separer les infos brutes
              */
+
 
 
 
