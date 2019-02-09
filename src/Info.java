@@ -22,6 +22,15 @@ public class Info {
         return sujet;
     }
 
+    @Override
+    public String toString() {
+        return "Info{" +
+                "sujet='" + sujet + '\n' +
+                "predicat='" + predicat + '\n' +
+                "objet='" + objet + '\n' +
+                '}';
+    }
+
     public String getPredicat() {
         return predicat;
     }
