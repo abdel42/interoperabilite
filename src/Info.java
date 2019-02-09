@@ -42,5 +42,3 @@ public class Info {
         this.objet = objet;
     }
 }
-
-sffdhhtghgfhgfhg
