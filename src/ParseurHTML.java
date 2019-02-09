@@ -30,7 +30,7 @@ public class ParseurHTML {
         this.url = url;
     }
 
-    public void parseur(){
+    public ArrayList<Info> parseur(){
 
         ArrayList<Info> listeInfo = new ArrayList<Info>();
         String url = this.getUrl();
@@ -100,6 +100,8 @@ public class ParseurHTML {
         }catch (IOException e){
             System.out.println("Erreur IOException ! \n"+e);
         }
+
+        return listeInfo;
     }
 
 }
