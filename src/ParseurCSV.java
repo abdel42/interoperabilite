@@ -8,7 +8,11 @@ import java.util.List;
 
 public class ParseurCSV {
 
-    //https://www.mkyong.com/java/how-to-read-and-parse-csv-file-in-java/
+
+    /**
+     * Ressource utilisé : https://www.mkyong.com/java/how-to-read-and-parse-csv-file-in-java/
+     */
+
 
 
     String csvFile = "./fr-en-adresse-et-geolocalisation-etablissements-premier-et-second-degre.csv";
