@@ -18,7 +18,7 @@ public class ParseurBDD {
         //String url = "jdbc:mysql://mira2.univ-st-etienne.fr/ba02996q";
         String url = "jdbc:mysql://localhost/interop";
         String identifiant = "root";
-        String mdp = "4ag2ncarnot";
+        String mdp = "XXXXXXX";
         c = DriverManager.getConnection(url, identifiant, mdp);
         c.setAutoCommit(false);
         st = c.createStatement();
