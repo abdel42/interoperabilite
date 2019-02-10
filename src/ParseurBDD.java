@@ -58,33 +58,4 @@ public class ParseurBDD {
         }
 
     }
-
-
-
-    public void afficherRes(ResultSet rs) throws SQLException {
-        int i;
-        ResultSetMetaData meta = (ResultSetMetaData) rs.getMetaData();
-        int nbColonne = meta.getColumnCount();
-        System.out.println("Il y a "+nbColonne+" colonnes dans ce ResultSet");
-
-        for(i=1;i<=nbColonne;i++) {
-            Object alpha = meta.getColumnName(i);
-            System.out.print(" | "+alpha+" | ");
-        }
-        System.out.println();
-
-        while(rs.next()) {
-            for(i=1;i<=nbColonne;i++) {
-                Object alpha = rs.getObject(i);
-                System.out.print(" | "+alpha+" | ");
-            }
-            System.out.println();
-
-        }
-
-    }
-
-
-
-
 }

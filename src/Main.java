@@ -12,11 +12,16 @@ public class Main {
         ArrayList<Info> infoHTML;
         //infoHTML = parseur.parseur();
 
+        /*
         try {
-            ParseurBDD test = new ParseurBDD();
+           ParseurBDD test = new ParseurBDD();
         }catch(SQLException e){
 
         }
+        */
 
+        ArrayList<Info> infoCSV;
+        ParseurCSV test = new ParseurCSV();
+        infoCSV = test.ParseurCSV();
     }
 }
