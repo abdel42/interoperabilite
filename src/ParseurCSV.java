@@ -51,11 +51,6 @@ public class ParseurCSV {
                 List<String> codePostal = Arrays.asList("43190","43400","43520","43200");
 
                 if(codePostal.contains(ligne[8])){//si l'etablissement est dans le haut lignon alors :
-                    for (int i = 0 ;i<ligne.length;i++){
-                        System.out.print(" / "+ligne[i]);
-                    }
-                    System.out.println();
-
                     listeInfo.add(new Info(ligne[1],"a_pour_code",ligne[0]));
                     listeInfo.add(new Info(ligne[1],"est_une",ligne[2]));
                     listeInfo.add(new Info(ligne[1],"est_un_établissement",ligne[4]));

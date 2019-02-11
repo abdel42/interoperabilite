@@ -39,22 +39,27 @@ public class ParseurHTML {
            // doc.select("style").remove();
            // doc.select("xml").remove();
             Element niveau1 = doc.selectFirst("div#content_size > div");
-            System.out.println(niveau1.toString());
+            //System.out.println(niveau1.toString());
             String test = niveau1.toString();
             String test2 = Jsoup.parse(test).text();
-
-            System.out.println("\n\n"+test2);
+           // System.out.println("\n\n"+test2);
             String[] infoBrut = test2.split(" - ");
             Pattern pattern;
             Matcher matcher = null;
             ArrayList<String[]> result = new ArrayList<String[]>();
-
             String[] matrice = null;
             for(int i=0;i<infoBrut.length;i++){
                 result.add(infoBrut[i].split(":"));
             }
             for (int i = 0 ; i<result.size();i++){
-                System.out.println(Arrays.toString(result.get(i)));
+
+                /**
+                 *
+                 *
+                 * ICI !
+                 *
+                 */
+                // System.out.println(Arrays.toString(result.get(i)));
                 switch (result.get(i).length) {
                     case 3:
                         //enlever les Tél et tél
@@ -62,8 +67,6 @@ public class ParseurHTML {
                             result.get(i)[k] = result.get(i)[k].replaceAll("Tél", "");
                             result.get(i)[k] = result.get(i)[k].replaceAll("tél", "");
                         }
-                        System.out.println("==>");
-                        System.out.println(Arrays.toString(result.get(i)));
                         /**
                          * format :
                          * SERVICE , NOM RESPONSABLE , NUMERO
@@ -87,21 +90,11 @@ public class ParseurHTML {
                      * Eventuellement ajouté les SERVICES MUNICIPAUX ...
                      */
                 }
-
-            }
-            System.out.println("===============");
-            for(int i = 0;i<listeInfo.size();i++){
-                System.out.println(listeInfo.get(i).toString());
             }
             System.out.println("Informations trouvées : "+listeInfo.size());
-
-
-
         }catch (IOException e){
             System.out.println("Erreur IOException ! \n"+e);
         }
-
         return listeInfo;
     }
-
 }
