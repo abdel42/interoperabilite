@@ -14,6 +14,7 @@ public class ParseurCSV {
      */
 
 
+    //
 
     String csvFile = "./fr-en-adresse-et-geolocalisation-etablissements-premier-et-second-degre.csv";
     BufferedReader br = null;

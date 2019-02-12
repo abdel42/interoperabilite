@@ -71,6 +71,7 @@ public class ParseurBDD {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
+        //
 
         System.out.println("Analyse base de donnée terminée :\n" +
                 "Informations trouvées : "+listeInfo.size());

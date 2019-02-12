@@ -42,7 +42,7 @@ public class Main {
         ArrayList<Info> infos = new ArrayList<Info>(infoBDD);
         infos.addAll(infoCSV);
         infos.addAll(infoHTML);
-
+        //
         System.out.println("\n");
 
         System.out.println("Traitement terminé ! \n" +

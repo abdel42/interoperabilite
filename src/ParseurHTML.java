@@ -48,6 +48,7 @@ public class ParseurHTML {
             Matcher matcher = null;
             ArrayList<String[]> result = new ArrayList<String[]>();
             String[] matrice = null;
+            //
             for(int i=0;i<infoBrut.length;i++){
                 result.add(infoBrut[i].split(":"));
             }

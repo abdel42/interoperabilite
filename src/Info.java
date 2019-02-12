@@ -31,6 +31,7 @@ public class Info {
                 '}';
     }
 
+    //
     public String getPredicat() {
         return predicat;
     }
